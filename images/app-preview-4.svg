@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Poonya Impact preview</title>
+  <desc id="desc">A vertical app preview screen showing impact progress.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8dd1b"/>
+      <stop offset=".48" stop-color="#9bd52c"/>
+      <stop offset="1" stop-color="#2f8d24"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7a0"/>
+      <stop offset="1" stop-color="#ef7a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg)"/>
+  <rect x="28" y="40" width="84" height="38" rx="19" fill="#ffffff" opacity=".78"/>
+  <text x="48" y="65" fill="#134c22" font-family="Arial, sans-serif" font-size="14" font-weight="700">Impact</text>
+  <text x="28" y="150" fill="#134c22" font-family="Arial, sans-serif" font-size="38" font-weight="800">Watch the</text>
+  <text x="28" y="196" fill="#134c22" font-family="Arial, sans-serif" font-size="38" font-weight="800">world bloom</text>
+  <g fill="url(#bar)">
+    <rect x="46" y="490" width="56" height="186" rx="28"/>
+    <rect x="126" y="386" width="56" height="290" rx="28"/>
+    <rect x="206" y="442" width="56" height="234" rx="28"/>
+    <rect x="286" y="326" width="56" height="350" rx="28"/>
+  </g>
+  <text x="28" y="760" fill="#173021" font-family="Arial, sans-serif" font-size="21" font-weight="800">Small Acts.</text>
+  <text x="28" y="792" fill="#173021" font-family="Arial, sans-serif" font-size="21" font-weight="800">Big Change. Together.</text>
+</svg>

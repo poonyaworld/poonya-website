@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Poonya Today's Seeds preview</title>
+  <desc id="desc">A vertical app preview screen for daily habit seeds.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff4c4"/>
+      <stop offset=".48" stop-color="#f8d788"/>
+      <stop offset="1" stop-color="#f2f8d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg)"/>
+  <rect x="28" y="40" width="128" height="38" rx="19" fill="#ffffff" opacity=".78"/>
+  <text x="48" y="65" fill="#134c22" font-family="Arial, sans-serif" font-size="14" font-weight="700">Today's Seeds</text>
+  <text x="28" y="150" fill="#134c22" font-family="Arial, sans-serif" font-size="38" font-weight="800">Four small</text>
+  <text x="28" y="196" fill="#134c22" font-family="Arial, sans-serif" font-size="38" font-weight="800">acts</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="28" y="392" width="334" height="82" rx="8" fill="#ffffff" opacity=".78"/>
+    <text x="50" y="426" fill="#6a310c" font-size="18" font-weight="800">Self</text>
+    <text x="50" y="455" fill="#5f6f63" font-size="17">Take a mindful walk.</text>
+    <rect x="28" y="494" width="334" height="82" rx="8" fill="#ffffff" opacity=".78"/>
+    <text x="50" y="528" fill="#6a310c" font-size="18" font-weight="800">Others</text>
+    <text x="50" y="557" fill="#5f6f63" font-size="17">Send one kind note.</text>
+    <rect x="28" y="596" width="334" height="82" rx="8" fill="#ffffff" opacity=".78"/>
+    <text x="50" y="630" fill="#6a310c" font-size="18" font-weight="800">Neighborhood</text>
+    <text x="50" y="659" fill="#5f6f63" font-size="17">Support a local place.</text>
+    <rect x="28" y="698" width="334" height="82" rx="8" fill="#ffffff" opacity=".78"/>
+    <text x="50" y="732" fill="#6a310c" font-size="18" font-weight="800">Earth</text>
+    <text x="50" y="761" fill="#5f6f63" font-size="17">Skip single-use plastic.</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the Poonya app team.">
+  <title>Contact | Poonya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Poonya home">
+        <img src="assets/AppLogo.png" alt="Poonya app logo">
+        <span>Poonya</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-section page-section" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h1 id="contact-title" class="page-title">Have a question about Poonya?</h1>
+        <p>
+          Send a note about support, privacy, partnerships, or anything else
+          related to the app.
+        </p>
+      </div>
+
+      <form class="contact-form" action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_blank">
+        <!-- Replace the entry IDs below with the field names from your Google Form. -->
+        <label for="name">Name</label>
+        <input id="name" name="entry.YOUR_NAME_FIELD_ID" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="entry.YOUR_EMAIL_FIELD_ID" type="email" autocomplete="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="entry.YOUR_MESSAGE_FIELD_ID" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/AppLogo.png" alt="" aria-hidden="true">
+    <p>Poonya. Small Acts. Big Change. Together.</p>
+  </footer>
+</body>
+</html>
