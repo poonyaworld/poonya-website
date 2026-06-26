@@ -34,12 +34,28 @@
         </p>
       </div>
 
+      <iframe
+        name="hidden-google-form"
+        title="Hidden Google Form response"
+        style="display: none;"
+      ></iframe>
+
       <form
         class="contact-form"
         action="https://docs.google.com/forms/d/e/1FAIpQLSeU9A1Gi9pC-ZgVYoummhiKk44hp9prJeG6NsdBwwzhT05UvQ/formResponse"
         method="POST"
-        target="_blank"
+        target="hidden-google-form"
+        onsubmit="showContactConfirmation(event)"
       >
+        <p
+          id="contact-confirmation"
+          style="display: none;"
+          role="status"
+          aria-live="polite"
+        >
+          Message has been successfully delivered. Thank you!
+        </p>
+
         <label for="name">Name</label>
         <input id="name" name="entry.1798958316" type="text" autocomplete="name" required>
 
@@ -58,5 +74,21 @@
     <img src="assets/AppLogo.png" alt="" aria-hidden="true">
     <p>Poonya. Small Acts. Big Change. Together.</p>
   </footer>
+
+  <script>
+    function showContactConfirmation(event) {
+      const form = event.target;
+      const confirmation = document.getElementById('contact-confirmation');
+      const button = form.querySelector('button[type="submit"]');
+
+      confirmation.style.display = 'block';
+      button.disabled = true;
+      button.textContent = 'Message Sent';
+
+      setTimeout(() => {
+        form.reset();
+      }, 500);
+    }
+  </script>
 </body>
 </html>
