@@ -34,13 +34,17 @@
         </p>
       </div>
 
-      <form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeU9A1Gi9pC-ZgVYoummhiKk44hp9prJeG6NsdBwwzhT05UvQ/viewform" method="POST" target="_blank">
-        <!-- Replace the entry IDs below with the field names from your Google Form. -->
+      <form
+        class="contact-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeU9A1Gi9pC-ZgVYoummhiKk44hp9prJeG6NsdBwwzhT05UvQ/formResponse"
+        method="POST"
+        target="_blank"
+      >
         <label for="name">Name</label>
         <input id="name" name="entry.1798958316" type="text" autocomplete="name" required>
 
         <label for="email">Email</label>
-        <input id="email" name="entry.1572745696" type="text" autocomplete="email" required>
+        <input id="email" name="entry.1572745696" type="email" autocomplete="email" required>
 
         <label for="message">Message</label>
         <textarea id="message" name="entry.392560332" rows="6" required></textarea>
