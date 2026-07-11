@@ -8,86 +8,132 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    .intro-section {
-      display: grid;
-      gap: 32px;
-    }
+  .intro-section {
+    display: grid;
+    gap: 56px;
+  }
 
-    .intro-content {
-      max-width: 860px;
-    }
+  .intro-section .section-heading {
+    max-width: 760px;
+    margin-bottom: 0;
+  }
 
-    .intro-content p {
-      margin: 0 0 18px;
-      line-height: 1.75;
-    }
+  .intro-section h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
 
-    .feature-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin: 28px 0 0;
-      padding: 0;
-      list-style: none;
-    }
+  .intro-content,
+  .closing-copy {
+    max-width: 860px;
+  }
 
-    .feature-list li {
-      padding: 16px 18px;
-      border: 1px solid rgba(19, 76, 34, 0.14);
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.68);
-      box-shadow: 0 10px 30px rgba(19, 76, 34, 0.06);
-      line-height: 1.5;
-    }
+  .intro-content p,
+  .closing-copy p {
+    margin: 0 0 18px;
+    color: #425546;
+    font-size: clamp(1rem, 1.2vw, 1.14rem);
+    line-height: 1.72;
+    font-weight: 500;
+  }
 
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .feature-list li {
+    padding: 16px 18px;
+    border: 1px solid rgba(19, 76, 34, 0.14);
+    border-radius: 8px;
+    color: #425546;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 0 10px 30px rgba(19, 76, 34, 0.06);
+    font-size: clamp(0.96rem, 1vw, 1.04rem);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .impact-card {
+    padding: 20px;
+    border: 1px solid rgba(19, 76, 34, 0.14);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 12px 34px rgba(19, 76, 34, 0.07);
+  }
+
+  .impact-card h3 {
+    margin: 0 0 10px;
+    color: var(--leaf-dark);
+    font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .impact-card p {
+    margin: 0;
+    color: #536458;
+    font-size: clamp(0.94rem, 1vw, 1rem);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .download-section h2 {
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    line-height: 1.04;
+  }
+
+  .download-steps h3 {
+    font-size: clamp(1rem, 1.1vw, 1.16rem);
+    line-height: 1.25;
+  }
+
+  .download-steps p {
+    font-size: clamp(0.94rem, 1vw, 1rem);
+    line-height: 1.55;
+  }
+
+  @media (max-width: 900px) {
     .impact-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 26px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .intro-section {
+      gap: 42px;
     }
 
-    .impact-card {
-      padding: 20px;
-      border: 1px solid rgba(19, 76, 34, 0.14);
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 12px 34px rgba(19, 76, 34, 0.07);
+    .feature-list,
+    .impact-grid {
+      grid-template-columns: 1fr;
     }
 
-    .impact-card h3 {
-      margin: 0 0 10px;
-      color: var(--leaf-dark);
-      font-size: 1.05rem;
+    .intro-section h2,
+    .download-section h2 {
+      font-size: clamp(2rem, 11vw, 2.8rem);
     }
 
-    .impact-card p {
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    .closing-copy {
-      max-width: 860px;
-    }
-
+    .intro-content p,
     .closing-copy p {
-      margin: 0 0 18px;
-      line-height: 1.75;
+      font-size: 1rem;
+      line-height: 1.68;
     }
-
-    @media (max-width: 900px) {
-      .impact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 640px) {
-      .feature-list,
-      .impact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  }
+</style>
+  
 </head>
 
 <body>
