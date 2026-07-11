@@ -6,7 +6,90 @@
   <meta name="description" content="Poonya is a daily habit app for small acts of well-being, kindness, community, and environmental care.">
   <title>Poonya | Small Acts. Big Change. Together.</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .intro-section {
+      display: grid;
+      gap: 32px;
+    }
+
+    .intro-content {
+      max-width: 860px;
+    }
+
+    .intro-content p {
+      margin: 0 0 18px;
+      line-height: 1.75;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      padding: 16px 18px;
+      border: 1px solid rgba(19, 76, 34, 0.14);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.68);
+      box-shadow: 0 10px 30px rgba(19, 76, 34, 0.06);
+      line-height: 1.5;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .impact-card {
+      padding: 20px;
+      border: 1px solid rgba(19, 76, 34, 0.14);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 12px 34px rgba(19, 76, 34, 0.07);
+    }
+
+    .impact-card h3 {
+      margin: 0 0 10px;
+      color: var(--leaf-dark);
+      font-size: 1.05rem;
+    }
+
+    .impact-card p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .closing-copy {
+      max-width: 860px;
+    }
+
+    .closing-copy p {
+      margin: 0 0 18px;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 900px) {
+      .impact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .feature-list,
+      .impact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
@@ -14,6 +97,7 @@
         <img src="assets/AppLogo.png" alt="Poonya app logo">
         <span>Poonya</span>
       </a>
+
       <div class="nav-links">
         <a class="active" href="index.html">Home</a>
         <a href="terms.html">Terms</a>
@@ -67,35 +151,97 @@
       </div>
     </section>
 
-      <p class="lead">
-          In a world that can often feel overwhelming, it is easy to wonder if one person's choices truly matter. Poonya is built on the Daily Compass: a holistic approach to living that shows how small, intentional actions create a ripple effect far beyond yourself.
+    <section class="section intro-section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">Built for real life</p>
+        <h2 id="about-title">Small actions that add up to meaningful change.</h2>
+      </div>
 
-WHAT YOU CAN DO • Start each day with a Daily Spark and four curated do-good habits • Complete habits, earn points, and track your daily goal and streak • See your progress over time with charts and impact insights • Save favorite habits and quotes for quick access • Reflect with journal entries on quotes that move you • Discover new habits, create your own, and add personal notes when you complete them • Join groups with friends, family, or colleagues to build habits together • Chat, share habits and quotes, and celebrate progress as a team
-
-THE FOUR CIRCLES OF IMPACT
-
-Self (Well-being): The center. You cannot pour from an empty cup. Nourishing your mind and body creates the foundation for everything else.
-
-Others (Kindness): The spark. A simple gesture or mindful word can transform someone's day and build human connection.
-
-Neighborhood (Community): The foundation. Strengthening local bonds creates a resilient, supportive ecosystem for everyone.
-
-Earth (Environment): The legacy. Small acts of stewardship help ensure the world we leave behind is as vibrant as the one we inherited.
-
-BUILT FOR REAL LIFE
-
-Poonya's Daily Compass is a holistic rhythm—not a rigid checklist. Your four daily seeds are your contribution to a better world, one manageable day at a time.
-
-Goodness was never meant to be a solo journey. With Groups, you can invite others, stay accountable, and turn individual ripples into a wave of positive change.
-
-At the heart of Poonya is Punya—the idea that every mindful choice is a seed. Plant them today, nourish them together, and watch the world bloom.
-
-Poonya is free to use. An optional one-time in-app purchase unlocks higher group limits.
-
-Small Acts. Big Change. Together.
+      <div class="intro-content">
+        <p>
+          In a world that can often feel overwhelming, it is easy to wonder if
+          one person's choices truly matter. Poonya is built on the Daily
+          Compass: a holistic approach to living that shows how small,
+          intentional actions create a ripple effect far beyond yourself.
         </p>
 
-    
+        <p>
+          Start each day with a Daily Spark and four curated do-good habits.
+          Complete habits, earn points, track your daily goal and streak, and
+          see your progress over time with charts and impact insights.
+        </p>
+
+        <ul class="feature-list">
+          <li>Save favorite habits and quotes for quick access.</li>
+          <li>Reflect with journal entries on quotes that move you.</li>
+          <li>Discover new habits, create your own, and add personal notes.</li>
+          <li>Join groups with friends, family, or colleagues.</li>
+          <li>Chat, share habits and quotes, and celebrate progress as a team.</li>
+          <li>Turn individual ripples into a wave of positive change.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">The Daily Compass</p>
+          <h2>The four circles of impact.</h2>
+        </div>
+
+        <div class="impact-grid">
+          <article class="impact-card">
+            <h3>Self</h3>
+            <p>
+              The center. You cannot pour from an empty cup. Nourishing your
+              mind and body creates the foundation for everything else.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <h3>Others</h3>
+            <p>
+              The spark. A simple gesture or mindful word can transform
+              someone's day and build human connection.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <h3>Neighborhood</h3>
+            <p>
+              The foundation. Strengthening local bonds creates a resilient,
+              supportive ecosystem for everyone.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <h3>Earth</h3>
+            <p>
+              The legacy. Small acts of stewardship help ensure the world we
+              leave behind is as vibrant as the one we inherited.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="closing-copy">
+        <p>
+          Poonya's Daily Compass is a holistic rhythm, not a rigid checklist.
+          Your four daily seeds are your contribution to a better world, one
+          manageable day at a time.
+        </p>
+
+        <p>
+          At the heart of Poonya is Punya: the idea that every mindful choice is
+          a seed. Plant them today, nourish them together, and watch the world
+          bloom.
+        </p>
+
+        <p>
+          Poonya is free to use. An optional one-time in-app purchase unlocks
+          higher group limits.
+        </p>
+      </div>
+    </section>
+
     <section class="section download-section" aria-labelledby="download-title">
       <div class="section-heading">
         <p class="eyebrow">Now Available!</p>
@@ -107,21 +253,23 @@ Small Acts. Big Change. Together.
           <span>1</span>
           <div>
             <h3>Open the Apple App Store</h3>
-            <p>Placeholder text for finding Poonya once the public listing is live.</p>
+            <p>Find Poonya in the App Store once the public listing is live.</p>
           </div>
         </li>
+
         <li>
           <span>2</span>
           <div>
             <h3>Search for Poonya</h3>
-            <p>Placeholder text for confirming the app name, logo, and publisher details.</p>
+            <p>Confirm the app name, logo, and publisher details.</p>
           </div>
         </li>
+
         <li>
           <span>3</span>
           <div>
             <h3>Install and begin</h3>
-            <p>Placeholder text for downloading the app and starting your first Daily Spark.</p>
+            <p>Download the app and start your first Daily Spark.</p>
           </div>
         </li>
       </ol>
