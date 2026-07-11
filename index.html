@@ -8,20 +8,52 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+  .section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
   .hero {
-    padding-bottom: 8px;
+    padding-top: 48px;
+    padding-bottom: 20px;
+  }
+
+  .hero h1 {
+    margin-bottom: 18px;
+  }
+
+  .hero .lead {
+    max-width: 780px;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 1.4vw, 1.16rem);
+    line-height: 1.65;
   }
 
   .app-preview {
-    padding-top: 28px;
-    padding-bottom: 48px;
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  .app-preview .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .app-preview h2 {
+    max-width: 760px;
+    margin-bottom: 0;
+    font-size: clamp(2.5rem, 5vw, 4.1rem);
+    line-height: 1.02;
+  }
+
+  .phone-row.five-up {
+    margin-top: 0;
   }
 
   .intro-section {
     display: grid;
-    gap: 34px;
-    padding-top: 44px;
-    padding-bottom: 48px;
+    gap: 28px;
+    padding-top: 30px;
+    padding-bottom: 36px;
   }
 
   .intro-section .section-heading {
@@ -31,7 +63,7 @@
 
   .intro-section h2 {
     margin-bottom: 0;
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     line-height: 1.04;
     letter-spacing: 0;
   }
@@ -43,10 +75,10 @@
 
   .intro-content p,
   .closing-copy p {
-    margin: 0 0 14px;
+    margin: 0 0 12px;
     color: #425546;
-    font-size: clamp(1rem, 1.2vw, 1.14rem);
-    line-height: 1.65;
+    font-size: clamp(1rem, 1.15vw, 1.08rem);
+    line-height: 1.58;
     font-weight: 500;
   }
 
@@ -59,19 +91,19 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
-    margin: 22px 0 0;
+    margin: 20px 0 0;
     padding: 0;
     list-style: none;
   }
 
   .feature-list li {
-    padding: 15px 16px;
+    padding: 14px 16px;
     border: 1px solid rgba(19, 76, 34, 0.14);
     border-radius: 8px;
     color: #425546;
     background: rgba(255, 255, 255, 0.68);
-    box-shadow: 0 10px 30px rgba(19, 76, 34, 0.06);
-    font-size: clamp(0.96rem, 1vw, 1.04rem);
+    box-shadow: 0 8px 24px rgba(19, 76, 34, 0.05);
+    font-size: 0.98rem;
     font-weight: 600;
     line-height: 1.45;
   }
@@ -80,7 +112,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .impact-card {
@@ -88,13 +120,13 @@
     border: 1px solid rgba(19, 76, 34, 0.14);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.72);
-    box-shadow: 0 12px 34px rgba(19, 76, 34, 0.07);
+    box-shadow: 0 10px 28px rgba(19, 76, 34, 0.06);
   }
 
   .impact-card h3 {
     margin: 0 0 8px;
     color: var(--leaf-dark);
-    font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+    font-size: 1.08rem;
     line-height: 1.2;
     font-weight: 800;
   }
@@ -102,23 +134,23 @@
   .impact-card p {
     margin: 0;
     color: #536458;
-    font-size: clamp(0.94rem, 1vw, 1rem);
-    line-height: 1.52;
+    font-size: 0.96rem;
+    line-height: 1.48;
     font-weight: 500;
   }
 
   .download-section {
-    padding-top: 44px;
-    padding-bottom: 56px;
+    padding-top: 36px;
+    padding-bottom: 48px;
   }
 
   .download-section .section-heading {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   .download-section h2 {
     margin-bottom: 0;
-    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-size: clamp(2rem, 4vw, 3.4rem);
     line-height: 1.04;
   }
 
@@ -127,26 +159,26 @@
   }
 
   .download-steps li {
-    min-height: 170px;
+    min-height: 160px;
     padding: 18px;
   }
 
   .download-steps span {
     width: 36px;
     height: 36px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .download-steps h3 {
     margin-bottom: 8px;
-    font-size: clamp(1rem, 1.1vw, 1.16rem);
+    font-size: 1.05rem;
     line-height: 1.25;
   }
 
   .download-steps p {
     margin: 0;
-    font-size: clamp(0.94rem, 1vw, 1rem);
-    line-height: 1.5;
+    font-size: 0.96rem;
+    line-height: 1.48;
   }
 
   @media (max-width: 900px) {
@@ -156,15 +188,25 @@
   }
 
   @media (max-width: 640px) {
+    .section {
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
+
+    .hero {
+      padding-top: 38px;
+      padding-bottom: 16px;
+    }
+
     .app-preview {
-      padding-top: 22px;
-      padding-bottom: 38px;
+      padding-top: 20px;
+      padding-bottom: 24px;
     }
 
     .intro-section {
-      gap: 30px;
-      padding-top: 38px;
-      padding-bottom: 42px;
+      gap: 24px;
+      padding-top: 26px;
+      padding-bottom: 32px;
     }
 
     .feature-list,
@@ -172,20 +214,21 @@
       grid-template-columns: 1fr;
     }
 
+    .app-preview h2,
     .intro-section h2,
     .download-section h2 {
-      font-size: clamp(2rem, 11vw, 2.8rem);
+      font-size: clamp(2rem, 10vw, 2.7rem);
     }
 
     .intro-content p,
     .closing-copy p {
       font-size: 1rem;
-      line-height: 1.6;
+      line-height: 1.56;
     }
 
     .download-section {
-      padding-top: 38px;
-      padding-bottom: 46px;
+      padding-top: 30px;
+      padding-bottom: 40px;
     }
   }
 </style>
