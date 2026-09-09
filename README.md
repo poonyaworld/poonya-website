@@ -7,6 +7,7 @@ Static HTML/CSS website for GitHub Pages.
 - `index.html` - home page with app overview and five app preview screens.
 - `terms.html` - Terms of Use page.
 - `privacy.html` - Privacy Policy page.
+- `delete-account.html` - public account-deletion instructions (Play Data safety URL: `https://poonya.app/delete-account`).
 - `contact.html` - contact form page.
 - `styles.css` - responsive styling.
 - `assets/AppLogo.png` - Poonya app logo.
